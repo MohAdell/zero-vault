@@ -1,0 +1,85 @@
+name: Bug report
+description: Report a reproducible problem in Zero Vault
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security-sensitive issues, do not open a public issue. Use the reporting process in `SECURITY.md`.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: State the problem clearly and concisely.
+      placeholder: The vault fails to unlock after app resume on Android 14.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps required to reproduce the issue.
+      placeholder: |
+        1. Open the app
+        2. Unlock the vault
+        3. Background the app for 30 seconds
+        4. Return to the app
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The app should show the biometric lock overlay and then return to the vault.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: The app shows a blank screen and requires a full restart.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+        - Web
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: flutter_version
+    attributes:
+      label: Flutter version
+      placeholder: 3.x.x
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Include relevant logs, stack traces, or screenshots where available.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before opening this report.
+          required: true
+        - label: This issue is not a private security vulnerability.
+          required: true

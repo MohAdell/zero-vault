@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security issue
+    about: Report vulnerabilities privately using the guidance in SECURITY.md.
+    url: https://github.com/MohAdell/zero-vault/security/advisories/new

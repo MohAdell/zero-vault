@@ -1,0 +1,51 @@
+name: zk_password
+description: Zero Vault is a zero-knowledge password manager built with Flutter, local-first encryption, and optional Supabase sync.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Architecture and state management
+  flutter_riverpod: ^2.5.1
+  go_router: ^14.2.0
+
+  # Cryptography and secure storage
+  cryptography: ^2.7.0
+  flutter_secure_storage: ^9.2.2
+  local_auth: ^2.3.0
+
+  # Local database
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+  path_provider: ^2.1.4
+
+  # Cloud sync
+  supabase_flutter: ^2.5.0
+  http: ^1.2.0
+
+  # Utilities and UI
+  freezed_annotation: ^2.4.1
+  google_fonts: ^6.2.1
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Code generation
+  build_runner: ^2.4.9
+  freezed: ^2.5.0
+  isar_generator: ^3.1.0
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true

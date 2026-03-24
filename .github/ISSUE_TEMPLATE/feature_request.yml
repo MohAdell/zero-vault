@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest an improvement or new capability for Zero Vault
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Identify the user or product need this request addresses.
+      placeholder: Users need a built-in TOTP generator so 2FA secrets do not require a second app.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Outline the proposed feature or improvement.
+      placeholder: Add TOTP secret storage, code generation, and countdown UI in the entry detail screen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: List relevant alternatives or tradeoffs.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Security
+        - Sync
+        - UX/UI
+        - Performance
+        - Testing
+        - Developer experience
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add mockups, references, or implementation constraints where relevant.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before opening this request.
+          required: true
